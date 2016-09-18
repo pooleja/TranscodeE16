@@ -331,6 +331,6 @@ if __name__ == '__main__':
             restart_previously_running_jobs()
 
             print("Server running...")
-            app.run(host='0.0.0.0', port=9016)
+            app.run(host='::', port=9016)
 
     run()
