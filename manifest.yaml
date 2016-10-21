@@ -17,27 +17,17 @@ info:
   x-21-github-profile-url: https://github.com/pooleja
   x-21-github-project-url: https://github.com/pooleja/TranscodeE16
   x-21-keywords: [stats, speed, video, transcode, download, test, iot, sensor]
+  x-21-app-image: https://cdn.filepicker.io/api/file/xpq5tK5nSTm5ZuH2B3BW
   x-21-total-price:
      min: 10
      max: 180000
-host: [fcce:a977:eef6:442a:aaf8:0000:0000:0001]:9016
+host: '[fcce:a977:eef6:442a:aaf8:0000:0000:0001]:9016'
 schemes:
    - http
 basePath: /
-x-21-manifest-path: /manifest
 
 # Available paths for the app
 paths:
-  /manifest:
-    get:
-      description: Gets the `manifest` of the application.
-
-      # Expected responses for this operation:
-      responses:
-        # Response code
-        200:
-          description: Successfully found the manifest YAML file and returned it to client.
-
   /server-status:
     get:
       description: Gets the counts of jobs running and queued on the server.

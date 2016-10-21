@@ -46,15 +46,6 @@ SATOSHI_PER_MIN_PRICE = 1500
 # Create the DB connection
 sql = TranscodeJobsSQL()
 
-
-@app.route('/manifest')
-def manifest():
-    """Provide the app manifest to the 21 crawler."""
-    with open('./manifest.yaml', 'r') as f:
-        manifest = yaml.load(f)
-    return json.dumps(manifest)
-
-
 @app.route('/price')
 @payment.required(10)
 def price():
